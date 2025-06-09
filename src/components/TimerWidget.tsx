@@ -1,7 +1,7 @@
 import { createSignal } from 'solid-js';
 import { useWebSocket } from '../hooks/useWebSocket';
 import { getTimerIdFromQuery } from '../utils/urlParams';
-import TimerDisplay from './TimerDisplay';
+import SimpleTimerDisplay from './SimpleTimerDisplay';
 import ControlButton from './ControlButton';
 import StatusIndicator from './StatusIndicator';
 import TimeInput from './TimeInput';
@@ -68,7 +68,7 @@ export default function TimerWidget() {
       style={{
         'max-width': '600px',
         'margin': '0 auto',
-        'padding': '2rem',
+        'padding': '1rem',
         'background': 'rgba(255, 255, 255, 0.1)',
         'border-radius': '16px',
         'backdrop-filter': 'blur(20px)',
@@ -76,22 +76,8 @@ export default function TimerWidget() {
         'box-shadow': '0 20px 40px rgba(0, 0, 0, 0.1)'
       }}
     >
-      <h1 style={{
-        'text-align': 'center',
-        'margin-bottom': '2rem',
-        'font-size': '2.5rem',
-        'font-weight': 'bold',
-        'color': '#1f2937',
-        'text-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)'
-      }}>
-        Timer Widget
-      </h1>
-      
-      <div style={{ 'text-align': 'center', 'margin-bottom': '1rem', 'color': '#6b7280' }}>
-        Timer ID: <strong style={{ 'color': '#3b82f6' }}>{timerId()}</strong>
-      </div>
 
-      <TimerDisplay time={currentTime} />
+      <SimpleTimerDisplay time={currentTime} format="exact" showLabels={true} />
       
       <StatusIndicator status={status} isConnected={isConnected} />
       

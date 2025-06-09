@@ -7,8 +7,8 @@ interface TimerDisplayProps {
 
 export default function TimerDisplay(props: TimerDisplayProps) {
   let displayRef: HTMLDivElement;
+  //@ts-ignore
   let prevTime = 0;
-
 
   createEffect(() => {
     const currentTime = props.time();
