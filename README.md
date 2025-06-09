@@ -9,6 +9,7 @@ Un widget de temporizador moderno y elegante construido con SolidJS.
 - Diseño responsive
 - Construido con SolidJS para un rendimiento óptimo
 - Utiliza CountUp.js para animaciones de números
+- Soporte para múltiples temporizadores mediante parámetros de URL
 
 ## 🛠️ Tecnologías
 
@@ -40,6 +41,22 @@ npm run dev
 - `npm run build` - Construye la aplicación para producción
 - `npm run preview` - Vista previa de la versión de producción
 
+## 🔗 Parámetros de URL
+
+El widget soporta múltiples temporizadores a través de parámetros de URL:
+
+- `?timer=1` - Temporizador por defecto (ID: 1)
+- `?timer=2` - Segundo temporizador
+- `?timer=3` - Tercer temporizador
+
+Ejemplo de uso:
+```
+http://localhost:3000/?timer=1
+http://localhost:3000/?timer=2
+```
+
+El ID del temporizador se mantiene sincronizado con la URL, permitiendo compartir temporizadores específicos.
+
 ## 🎨 Estructura del Proyecto
 
 ```
@@ -59,10 +76,6 @@ Este proyecto está bajo la Licencia MIT.
 ## 👥 Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir los cambios que te gustaría hacer.
-
-```bash
-$ npm install # or pnpm install or yarn install
-```
 
 ### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
 
