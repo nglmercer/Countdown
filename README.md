@@ -1,4 +1,64 @@
-## Usage
+# Timer Widget - SolidJS
+
+Un widget de temporizador moderno y elegante construido con SolidJS.
+
+## 🚀 Características
+
+- Interfaz de usuario moderna y minimalista
+- Temporizador preciso con animaciones suaves
+- Diseño responsive
+- Construido con SolidJS para un rendimiento óptimo
+- Utiliza CountUp.js para animaciones de números
+
+## 🛠️ Tecnologías
+
+- [SolidJS](https://www.solidjs.com/) - Framework JavaScript reactivo
+- [Vite](https://vitejs.dev/) - Bundler y servidor de desarrollo
+- [TypeScript](https://www.typescriptlang.org/) - Superset de JavaScript tipado
+- [CountUp.js](https://inorganik.github.io/countUp.js/) - Biblioteca para animaciones de números
+
+## 📦 Instalación
+
+1. Clona el repositorio:
+```bash
+git clone [URL_DEL_REPOSITORIO]
+```
+
+2. Instala las dependencias:
+```bash
+npm install
+```
+
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+```
+
+## 🏗️ Scripts Disponibles
+
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Construye la aplicación para producción
+- `npm run preview` - Vista previa de la versión de producción
+
+## 🎨 Estructura del Proyecto
+
+```
+src/
+├── assets/      # Recursos estáticos
+├── components/  # Componentes de la aplicación
+├── hooks/       # Hooks personalizados
+├── utils/       # Utilidades y funciones auxiliares
+├── App.tsx      # Componente principal
+└── index.tsx    # Punto de entrada
+```
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia MIT.
+
+## 👥 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir los cambios que te gustaría hacer.
 
 ```bash
 $ npm install # or pnpm install or yarn install
